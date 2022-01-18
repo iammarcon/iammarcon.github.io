@@ -1,0 +1,194 @@
+header {
+}
+
+.logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  width: 100vw;
+}
+
+.logo img {
+  border-radius: 200px;
+  height: 40px;
+  width: 40px;
+  margin-left: 20px;
+}
+
+/**** Navibar ****/
+
+#nav__top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0);
+  overflow: hidden;
+  height: auto;
+  position: fixed;
+  top: 0;
+  height: 60px;
+  width: 100vw;
+  z-index: 100;
+  border-bottom: 3px dashed #8ce605;
+}
+
+#nav__top h1 {
+  text-align: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+#nav__top ul {
+  display: none;
+  position: fixed;
+  top: 61px;
+  width: auto;
+  right: 0;
+  list-style: none;
+  background-color: rgb(140, 230, 5);
+}
+
+#nav__top ul li {
+  display: block;
+  width: auto;
+}
+
+/**** hyperlinks ****/
+#nav__top ul li a {
+  text-decoration: none;
+  color: rgb(0.0);
+  border-bottom: 1px solid black;
+  display: block;
+  padding: 15px;
+  transition: fadeIn 0.5s ease;
+}
+
+#nav__top ul li a:hover {
+  background-color: rgb(0, 0, 0);
+  border-left: 2px solid rgb(140, 230, 5);
+  color: rgb(140, 230, 5);
+  animation: ease-in 1s;
+}
+
+/* All about the Burger! */
+/**** Burgerimage handeling ****/
+.burgerimage {
+  position: absolute;
+  top: 8px;
+  right: 30px;
+  font-size: 28pt;
+  cursor: pointer;
+  transition: transform 0.6s ease;
+  color: rgb(140, 230, 5);
+}
+
+/**** Checkmark hidden ****/
+#burgerbutton {
+  display: none;
+}
+
+/**** Burgermenu clickhandeling ****/
+#burgerbutton:checked ~ ul {
+  display: block;
+  animation-name: open;
+  animation-duration: 0.6s;
+}
+
+/**** bugerbutton transformanimation ****/
+#burgerbutton:checked ~ .burgerimage {
+  transform: rotate(360deg);
+}
+
+/* Keyframes Animation */
+/**** open ****/
+@keyframes open {
+  from {
+    right: -100vw;
+  }
+  to {
+    right: 0vw;
+  }
+}
+
+@-moz-keyframes open {
+  from {
+    right: -100vw;
+  }
+  to {
+    right: 0vw;
+  }
+}
+
+@-webkit-keyframes open {
+  from {
+    right: -100vw;
+  }
+  to {
+    right: 0vw;
+  }
+}
+@-o-keyframes open {
+  from {
+    right: -100vw;
+  }
+  to {
+    right: 0vw;
+  }
+}
+@-ms-keyframes open {
+  from {
+    right: -100vw;
+  }
+  to {
+    right: 0vw;
+  }
+}
+
+
+/***** fadeIn *****/
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
