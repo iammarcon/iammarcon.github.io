@@ -22,7 +22,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(0, 0, 0);
+  background-color: #000;
   overflow: hidden;
   height: auto;
   position: fixed;
@@ -47,7 +47,7 @@ header {
   width: auto;
   right: 0;
   list-style: none;
-  background-color: rgb(140, 230, 5);
+  background-color: #8ce605;
 }
 
 #nav__top ul li {
@@ -58,17 +58,17 @@ header {
 /**** hyperlinks ****/
 #nav__top ul li a {
   text-decoration: none;
-  color: rgb(0.0);
-  border-bottom: 1px solid black;
+  color: #fff;
+  border-bottom: 1px solid#000;
   display: block;
   padding: 15px;
   transition: fadeIn 0.5s ease;
 }
 
 #nav__top ul li a:hover {
-  background-color: rgb(0, 0, 0);
-  border-left: 2px solid rgb(140, 230, 5);
-  color: rgb(140, 230, 5);
+  background-color: #000;
+  border-left: 2px solid #8ce605;
+  color:#8ce605;
   animation: ease-in 1s;
 }
 
@@ -81,7 +81,7 @@ header {
   font-size: 28pt;
   cursor: pointer;
   transition: transform 0.6s ease;
-  color: rgb(140, 230, 5);
+  color: #8ce605;
 }
 
 /**** Checkmark hidden ****/

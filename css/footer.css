@@ -14,7 +14,7 @@ footer ul {
   flex-direction: row;
   text-decoration: none;
   list-style: none;
-  background-color: rgb(0, 0, 0);
+  background-color: #000;
 }
 
 footer ul li {
@@ -24,7 +24,7 @@ footer ul li {
 footer ul li a {
   padding: 10px;
   text-decoration: none;
-  color: rgb(140, 230, 5);
+  color: #8ce605;
   cursor: pointer;
 }
 
