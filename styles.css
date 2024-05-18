@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Libre Baskerville", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #000, #555);
+    color: white;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60%;
+    max-width: 600px;
+    text-align: center;
+}
+
+.logo {
+    max-width: 150px;
+    margin: 0 auto 60px;
+}
+
+.content h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+.content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 2rem;
+    margin: 0 0.5rem;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #999;
+}
